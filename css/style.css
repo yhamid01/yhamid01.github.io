@@ -1,4 +1,200 @@
-body .container {
-	background-color: burlywood;
-	width: 800px;	
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/** style */
+body {
+    background-image: url("../img/bg2.png");
+    background-position: right;
+    background-attachment: fixed;
+    background-size: cover;
+    font: 16px/28px Trebuchet Ms, Sans-serif;
+    color: #333:
+}
+.sosmed {
+    height: 40px;
+    width: 100%;
+    background-color: brown;
+    position: fixed;
+    top: 0;
+}
+.side-bar {
+    height: 360px;
+    width: 100px;
+    background-color: salmon;
+    position: absolute;
+    top: 182px;
+    right: 160px;
+    display: inline-flex;
+    border: none;
+    border-radius: 0 20px 20px 0;
+}
+.side-bar2 {
+    height: 360px;
+    width: 100px;
+    background-color: salmon;
+    position: absolute;
+    top: 182px;
+    left: 160px;
+    display: inline-flex;
+    border: none;
+    border-radius: 20px 0 0 20px;
+}
+.sosmed ul li {
+    display: inline-block;
+    margin-left: 10px;
+    text-decoration: none;
+    color: white;
+    padding-top: 2px;
+    z-index: 999;
+    }
+.sosmed ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 35px;
+}
+.container {
+    background-color: whitesmoke;
+    width: 800px;
+    margin: auto;
+}
+.box-header {
+    background-image: url(../img/bg-header.png);    
+}
+.header .judul {
+    font-size: 40px;
+    padding-top: 60px;
+    color: brown;
+    font-weight: bold;
+}
+.header small {
+    font-size: 12px;
+    padding-top: -10px;
+    color: brown;
+}
+.header ul li {
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    border: thin solid salmon;
+    border-radius: 5px;
+
+ }
+.header a {
+    text-decoration: none;
+    color: salmon;
+    padding: 5px;
+}
+.header li:hover {
+    background-color: lightblue;
+    color:white;
+}
+.hero {
+    background-image: url(../img/emr.png);
+    height: 350px;
+    background-size: cover;
+    background-position: bottom;
+    border-top: 5px solid salmon;
+    border-bottom: 3px solid brown;
+}
+.welcome h1 {
+    font-size: 20px;
+    width: 350px;
+    color: tomato;
+    text-align: center;
+    border: 3px solid whitesmoke;
+    border-radius: 10px;
+    padding: 10px 15px;
+    margin: auto;
+    margin-top: 150px;
+}
+.welcome h1:hover {
+    background-color: salmon;
+    color: whitesmoke;
+    border-radius: 10px;
+}
+.contain {
+    background-color: wheat;
+}
+.contain h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: salmon;
+    padding-top: 20px;
+    margin-left: 12px;
+}
+.contain .penulis {
+    font-size: 12px;
+    margin-bottom: 20px;
+ }
+.penulis a {
+    font-size: 12px;
+    text-decoration: none;
+    color: salmon;
+}
+.contain p {
+    color: #333;
+    margin-left: 12px;
+    margin-right: 12px;
+    text-align: justify;
+    padding-bottom: 12px;
+ }
+.footer {
+    background-color: #333;
+    height: 40px;
+    position: relative;
+    bottom: 0;
+    
+}
+.footer p {
+    text-align: center;
+    color: white;
+    padding-top: 5px;
+    font-size: 12px;
 }
