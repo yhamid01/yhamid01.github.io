@@ -56,12 +56,27 @@ body {
     font: 16px/28px Trebuchet Ms, Sans-serif;
     color: #333:
 }
+.box-header {
+    position: relative;
+}
+.ribbon {
+    background-image: url(../img/ribbon1.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 300px;
+    width: 243px;
+    display: inline-block;
+    right: -190px;
+    top: 90px;
+    text-indent: -9999px;
+}
 .sosmed {
     height: 40px;
-    width: 100%;
-    background-color: brown;
+    background-color: #0E808B;
     position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
     z-index: 1;
 }
 .side-bar {
@@ -74,6 +89,7 @@ body {
     display: inline-flex;
     border: none;
     border-radius: 0 20px 20px 0;
+    z-index: 5;
 }
 .sosmed ul li {
     display: inline-block;
@@ -93,10 +109,10 @@ body {
         display: block;
         margin-left: 10px;
         position: static;
-        padding-top: 6px;
+        padding-top: 6px;        
     }
     .sosmed2 ul li a:hover {
-        color: brown;
+        color: #0E808B;
     }
 .container {
     background-color: whitesmoke;
@@ -109,16 +125,16 @@ body {
 .header .judul {
     font-size: 40px;
     padding-top: 60px;
-    color: brown;
+    color: #0E808B;
     font-weight: bold;
 }
 .header .judul a:hover {
-    color: brown;
+    color: #0E808B;
 }
 .header small {
     font-size: 12px;
     padding-top: -10px;
-    color: brown;
+    color: #0E808B;
     margin-left: 8px;
 }
 .header ul li {
@@ -127,12 +143,12 @@ body {
     margin-top: 25px;
     margin-bottom: 10px;
     margin-left: 8px;
-    border: thin solid salmon;
+    border: thin solid #00CCCC;
     border-radius: 5px;
  }
 .header a {
     text-decoration: none;
-    color: salmon;
+    color: #00CCCC;
     padding: 5px;
 }
 .header li:hover {
@@ -140,11 +156,12 @@ body {
 }
 .hero {
     background-image: url(../img/emr.png);
-    height: 350px;
+    height: 360px;
     background-size: cover;
     background-position: bottom;
-    border-top: 5px solid salmon;
-    border-bottom: 3px solid brown;
+    border-top: 25px solid #339999;
+    border-bottom: 3px solid #0E808B;
+    box-sizing: border-box;
 }
 .welcome h1 {
     font-size: 20px;
@@ -158,7 +175,7 @@ body {
     margin-top: 150px;
 }
 .welcome h1:hover {
-    background-color: salmon;
+    background-color: #00CCCC;
     color: whitesmoke;
     border-radius: 10px;
 }
@@ -168,26 +185,39 @@ body {
     text-align: center;
     color: #333;
 }
+.contain2 {
+    height: 400px;
+    background-color: wheat;
+    color: #333;
+}
 .contain h2 {
     font-size: 34px;
     font-weight: bold;
-    color: salmon;
+    color: #00CCCC;
     padding-top: 20px;
+    display: inline-block;
+}
+.contain h2:hover {
+    color: #0E808B;
+    border-bottom: 2px solid #0E808B;
+
 }
 .contain p {
     padding: 20px;
     font-size: 18px;
     color: #333;
-
 }
 .art .penulis {
     font-size: 10px;
     margin-top: -5px;
 }
+a {
+    text-decoration: none;
+    color: #00CCCC;
+}
 .art a {
     font-size: 10px;
-    text-decoration: none;
-    color: salmon;
+
 }
 .art p {
     color: #333;
@@ -195,6 +225,7 @@ body {
  }
  .art {
     margin-top: -12px;
+    box-sizing: border-box;
  }
  .art .art1 {
     height: auto;
@@ -204,7 +235,7 @@ body {
     padding-right: 12px;
     padding-left: 12px;
     float: left;
-    border: 3px dashed salmon;
+    border: 3px dashed #00CCCC;
     font: 14px/18px Trebuchet Ms, Sans-serif;
  }
  .art .art2 {
@@ -214,8 +245,8 @@ body {
     margin-left: 18px;
     padding-right: 12px;
     padding-left: 12px;
-    float: left;
-    border: 3px dashed salmon;
+    float: right;
+    border: 3px dashed #00CCCC;
     font: 14px/18px Trebuchet Ms, Sans-serif;
  }
  .art .art3 {
@@ -226,7 +257,7 @@ body {
     padding-right: 12px;
     padding-left: 12px;
     float: left;
-    border: 3px dashed salmon;
+    border: 3px dashed #00CCCC;
     font: 14px/18px Trebuchet Ms, Sans-serif;
  }
  .art .art4 {
@@ -237,8 +268,8 @@ body {
     margin-bottom: 12px;
     padding-right: 12px;
     padding-left: 12px;
-    float: left;
-    border: 3px dashed salmon;
+    float: right;
+    border: 3px dashed #00CCCC;
     font: 14px/18px Trebuchet Ms, Sans-serif;
  }
  .art img {
@@ -247,14 +278,12 @@ body {
  }
 .footer {
     background-color: #333;
-    height: 40px;
+    height: 30px;
     width: 100%;
-    position: absolute;    
 }
 .footer p {
     text-align: center;
     color: white;
-    padding-top: 5px;
     font-size: 12px;
 }
 
