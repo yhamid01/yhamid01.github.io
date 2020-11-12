@@ -70,21 +70,10 @@ body {
     background-color: salmon;
     position: fixed;
     top: 182px;
-    right: 168px;
+    right: 70px;
     display: inline-flex;
     border: none;
     border-radius: 0 20px 20px 0;
-}
-.side-bar2 {
-    height: 360px;
-    width: 100px;
-    background-color: salmon;
-    position: fixed;
-    top: 182px;
-    left: 160px;
-    display: inline-flex;
-    border: none;
-    border-radius: 20px 0 0 20px;
 }
 .sosmed ul li {
     display: inline-block;
@@ -93,9 +82,6 @@ body {
     color: white;
     padding-top: 2px;
     }
-    .sosmed2 ul li {
-
-        }
 .sosmed ul li a {
     text-decoration: none;
     color: white;
@@ -105,7 +91,7 @@ body {
         color: white;
         font-size: 65px;
         display: block;
-        margin-left: 17px;
+        margin-left: 10px;
         position: static;
         padding-top: 6px;
     }
@@ -114,7 +100,7 @@ body {
     }
 .container {
     background-color: whitesmoke;
-    width: 800px;
+    width: 1000px;
     margin: auto;
 }
 .box-header {
@@ -126,19 +112,23 @@ body {
     color: brown;
     font-weight: bold;
 }
+.header .judul a:hover {
+    color: brown;
+}
 .header small {
     font-size: 12px;
     padding-top: -10px;
     color: brown;
+    margin-left: 8px;
 }
 .header ul li {
     display: inline-block;
     margin-right: 10px;
     margin-top: 25px;
     margin-bottom: 10px;
+    margin-left: 8px;
     border: thin solid salmon;
     border-radius: 5px;
-
  }
 .header a {
     text-decoration: none;
@@ -147,7 +137,6 @@ body {
 }
 .header li:hover {
     background-color: lightblue;
-    color:white;
 }
 .hero {
     background-image: url(../img/emr.png);
@@ -175,40 +164,128 @@ body {
 }
 .contain {
     background-color: wheat;
+    margin: auto;
+    text-align: center;
+    color: #333;
 }
 .contain h2 {
-    font-size: 24px;
+    font-size: 34px;
     font-weight: bold;
     color: salmon;
     padding-top: 20px;
-    margin-left: 12px;
 }
-.contain .penulis {
-    font-size: 12px;
-    margin-bottom: 20px;
- }
-.penulis a {
-    font-size: 12px;
+.contain p {
+    padding: 20px;
+    font-size: 18px;
+    color: #333;
+
+}
+.art .penulis {
+    font-size: 10px;
+    margin-top: -5px;
+}
+.art a {
+    font-size: 10px;
     text-decoration: none;
     color: salmon;
 }
-.contain p {
+.art p {
     color: #333;
-    margin-left: 12px;
-    margin-right: 12px;
-    text-align: justify;
     padding-bottom: 12px;
+ }
+ .art {
+    margin-top: -12px;
+ }
+ .art .art1 {
+    height: auto;
+    width: 46%;
+    margin-top: 12px;
+    margin-left: 1px;
+    padding-right: 12px;
+    padding-left: 12px;
+    float: left;
+    border: 3px dashed salmon;
+    font: 14px/18px Trebuchet Ms, Sans-serif;
+ }
+ .art .art2 {
+    height: auto;
+    width: 46%;
+    margin-top: 12px;
+    margin-left: 18px;
+    padding-right: 12px;
+    padding-left: 12px;
+    float: left;
+    border: 3px dashed salmon;
+    font: 14px/18px Trebuchet Ms, Sans-serif;
+ }
+ .art .art3 {
+    height: auto;
+    width: 46%;
+    margin-top: 12px;
+    margin-left: 1px;
+    padding-right: 12px;
+    padding-left: 12px;
+    float: left;
+    border: 3px dashed salmon;
+    font: 14px/18px Trebuchet Ms, Sans-serif;
+ }
+ .art .art4 {
+    height: auto;
+    width: 46%;
+    margin-top: 12px;
+    margin-left: 18px;
+    margin-bottom: 12px;
+    padding-right: 12px;
+    padding-left: 12px;
+    float: left;
+    border: 3px dashed salmon;
+    font: 14px/18px Trebuchet Ms, Sans-serif;
+ }
+ .art img {
+    float: left;
+    height: 80px;
  }
 .footer {
     background-color: #333;
     height: 40px;
-    position: relative;
-    bottom: 0;
-    
+    width: 100%;
+    position: absolute;    
 }
 .footer p {
     text-align: center;
     color: white;
     padding-top: 5px;
     font-size: 12px;
+}
+
+
+
+
+
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
 }
