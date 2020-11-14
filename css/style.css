@@ -109,11 +109,12 @@ body {
         display: block;
         margin-left: 10px;
         position: static;
-        padding-top: 6px;        
+        padding-top: 6px;
+        transition: .7s;        
     }
     .side-menu ul li a:hover {
         color: wheat;
-        transition: .7s;
+        
     }
 .container {
     background-color: whitesmoke;
@@ -129,10 +130,11 @@ body {
     padding-left: 5px;
     font-weight: bold;
     font-family: 'Raleway', sans-serif;
+    
 }
 .header .judul a:hover {
     color: salmon;
-    transition: .5s;
+    transition: 1s;
 }
 .header a {
     text-decoration: none;
