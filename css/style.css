@@ -212,8 +212,9 @@ body {
     text-align: center;
     color: #333;
 }
-.contain2 {
+.container .contain2 {
     height: 400px;
+    position: relative;
     background-color: wheat;
     color: #333;
 }
